@@ -7,7 +7,9 @@ function Header() {
         <Link href="/">
           <img 
             src="https://links.papareact.com/yvf" alt="Medium Logo" 
-            className="w-44 object-contain cursor-pointer" />
+            className="w-44 object-contain cursor-pointer" 
+            alt="medium logo"
+            />
         </Link>
         <div className="hidden md:inline-flex items-center space-x-5">
           <h3>About</h3>

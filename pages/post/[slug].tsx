@@ -4,8 +4,6 @@ import Header from '../../components/Header';
 import PortableText from '../../node_modules/react-portable-text/dist/index';
 import { useForm, SubmitHandler } from '../../node_modules/react-hook-form';
 import { useState } from 'react';
-import Image from "../../node_modules/next/image"
-
 
 interface IFormInput {
   _id: string;
@@ -44,7 +42,7 @@ function Post({ post }: Props) {
     <main>
       <Header/>
 
-      <Image 
+      <img 
       className="w-full h-100 object-cover"
       src={urlFor(post.mainImage).url()!}
       alt='main image' 
@@ -55,7 +53,7 @@ function Post({ post }: Props) {
         <h2 className="text-xl font-light text-gray-500 mb-2">{post.description}</h2>
 
         <div className='flex items-center space-x-2'>
-          <Image 
+          <img 
           src={urlFor(post.author.image).url()!}
           className="h-10 w-10 rounded-full" 
           alt='author image' 

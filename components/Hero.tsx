@@ -1,5 +1,3 @@
-import Image from '../node_modules/next/image';
-
 export const Hero = () => {
   return (
     <div className="flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0">
@@ -10,7 +8,7 @@ export const Hero = () => {
       </div>
 
       <div>
-        <Image 
+        <img 
         src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"
         className="hidden md:inline-flex h-32 lg:h-full"
         alt="Medium Logo"
