@@ -31,7 +31,7 @@ export default function Home({ posts }: Props) {
               <img className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' src={urlFor(post.mainImage).url()!} alt="" />
               <div className='flex justify-between p-5 bg-white'>
                 <div>
-                  <p className='text-md font-bold'>{post.title}</p>
+                  <p className='text-md font-bold'>{post._title}</p>
                   <p className='text-xs'>
                     {post.description} by {post.author.name}
                   </p>
