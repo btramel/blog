@@ -32,6 +32,7 @@ export default function Home({ posts }: Props) {
               <Image 
               className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' 
               src={urlFor(post.mainImage).url()!} 
+              alt='main image' 
               />
               <div className='flex justify-between p-5 bg-white'>
                 <div>
@@ -43,7 +44,8 @@ export default function Home({ posts }: Props) {
 
               <Image 
               className="h-12 w-12 rounded-full" 
-              src={urlFor(post.author.image).url()!} 
+              src={urlFor(post.author.image).url()!}
+              alt='author image' 
               />
               </div>
             </div>

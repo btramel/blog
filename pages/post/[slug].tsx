@@ -46,7 +46,8 @@ function Post({ post }: Props) {
 
       <Image 
       className="w-full h-100 object-cover"
-      src={urlFor(post.mainImage).url()!} 
+      src={urlFor(post.mainImage).url()!}
+      alt='main image' 
       />
 
       <article className="mx-10 lg:mx-36">
@@ -57,6 +58,7 @@ function Post({ post }: Props) {
           <Image 
           src={urlFor(post.author.image).url()!}
           className="h-10 w-10 rounded-full" 
+          alt='author image' 
           />
           <p className="font-extralight text-sm">
             By {post.author.name} - Published at {" "}
