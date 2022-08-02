@@ -5,6 +5,7 @@ import { Hero } from '../components/Hero';
 import { Post } from "../typings";
 import { sanityClient, urlFor } from "../sanity";
 import Link from '../node_modules/next/link';
+import Image from '../node_modules/next/image';
 
 
 interface Props {
@@ -28,7 +29,10 @@ export default function Home({ posts }: Props) {
         {posts.map(post => (
           <Link key={post._id} href={`/post/${post.slug.current}`}>
             <div className='group cursor-pointer overflow-hidden'>
-              <img className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' src={urlFor(post.mainImage).url()!} alt="" />
+              <Image 
+              className='h-60 w-full object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out' 
+              src={urlFor(post.mainImage).url()!} 
+              />
               <div className='flex justify-between p-5 bg-white'>
                 <div>
                   <p className='text-md font-bold'>{post._title}</p>
@@ -37,7 +41,10 @@ export default function Home({ posts }: Props) {
                   </p>
                 </div>
 
-              <img className="h-12 w-12 rounded-full" src={urlFor(post.author.image).url()!} alt="" />
+              <Image 
+              className="h-12 w-12 rounded-full" 
+              src={urlFor(post.author.image).url()!} 
+              />
               </div>
             </div>
           </Link>

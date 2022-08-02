@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Image from '../node_modules/next/image';
 
 export const Hero = () => {
   return (
@@ -10,10 +11,10 @@ export const Hero = () => {
       </div>
 
       <div>
-        <img 
-        src="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png" 
-        alt="Medium Logo" 
-        className='hidden md:inline-flex h-32 lg:h-full'/>
+        <Image 
+        src='https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png'
+        className='hidden md:inline-flex h-32 lg:h-full'
+        />
       </div>
 
     </div>
