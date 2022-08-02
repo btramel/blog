@@ -155,7 +155,7 @@ function Post({ post }: Props) {
             )}
           </div>
 
-          <input type="submit" className="shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-non text-white font-bold py-2 px-4 rounded cursor-pointer" />
+          <input type="submit" className="shadow bg-yellow-500 hover:bg-yellow-400 focus:shadow-outline focus:outline-non text-white font-bold py-2 px-4 rounded cursor-pointer" value="Submit Comment"></input>
       </form>
       )}
 
@@ -234,6 +234,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post,
     },
-    revalidate: 43200, // after twelve hours, it will update the cached pages
+    revalidate: 180, // after twelve hours, it will update the cached pages
   }
 }
