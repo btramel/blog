@@ -1,5 +1,4 @@
 import { sanityClient, urlFor } from "../../sanity";
-// import { Post } from "../../typings";
 import Header from '../../components/Header';
 import PortableText from '../../node_modules/react-portable-text/dist/index';
 import { useForm, SubmitHandler } from '../../node_modules/react-hook-form';
