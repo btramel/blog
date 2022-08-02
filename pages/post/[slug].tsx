@@ -4,6 +4,8 @@ import Header from '../../components/Header';
 import PortableText from '../../node_modules/react-portable-text/dist/index';
 import { useForm, SubmitHandler } from '../../node_modules/react-hook-form';
 import { useState } from 'react';
+import { Post } from '../../typings';
+import { GetStaticProps } from 'next';
 
 interface IFormInput {
   _id: string;
@@ -137,7 +139,6 @@ function Post({ post }: Props) {
           {...register("comment", { required: true })}
           className='shadow border rounded py-2 px-3 form-textarea mt-1 block w-full 
           ring-yellow-500 outline-none focus:ring' 
-          type="text" 
           placeholder="Timberwolves will be 2023 champs!"
           rows={8} />
         </label>
