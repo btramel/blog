@@ -1,4 +1,3 @@
-
 import Head from '../node_modules/next/head';
 import Header from '../components/Header';
 import { Hero } from '../components/Hero';
@@ -15,8 +14,8 @@ export default function Home({ posts }: Props) {
   return (
     <div className="max-w-7xl mx-auto">
       <Head >
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Medium 2.0</title>
+        <link rel="icon" href="https://accountabilitylab.org/wp-content/uploads/2020/03/Medium-logo.png"/>
       </Head>
 
       <Header/>
